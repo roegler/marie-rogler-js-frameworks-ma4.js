@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import RecipieItem from "./RecipeItem"
 import { BASE_URL } from "./api";
 
@@ -23,10 +22,6 @@ function RecipeList() {
             ))}
         </div>
     );
-}
-
-RecipeList.propTypes = {
-    title: PropTypes.string
 }
 
 export default RecipeList;
