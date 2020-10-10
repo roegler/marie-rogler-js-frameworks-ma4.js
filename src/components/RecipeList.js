@@ -33,7 +33,7 @@ function RecipeList() {
         <div>
             <SearchRecipie handleSearch={searchRecipies} />
             {filtredRecipies.map(r => (
-                <RecipieItem key={r.title} title={r.title} thumbnail={r.thumbnail} />
+                <RecipieItem key={r.title} title={r.title} thumbnail={r.thumbnail} ingredients={r.ingredients}/>
             ))}
         </div>
     );
